@@ -780,7 +780,7 @@ function ee(t) {
         })
     }), r && O("span", {
         class: "chapter-card__day-chip", text: r
-    }))), "Human-Wildlife-Coexistance" === t.id && O("img", { class: "chapter-card__coexistence-banner", src: "Internal-data/ui-assets/banner-coexistance-page.webp", alt: "Illustration of human-wildlife coexistence", loading: "lazy", decoding: "async" }), "WWF NA Bootcamp" === t.id && O("img", { class: "chapter-card__section-banner", src: "Internal-data/ui-assets/banner-camp.webp", alt: "Savanna camp landscape", loading: "lazy", decoding: "async" }), "Reintroduction and Conservation" === t.id && O("img", { class: "chapter-card__section-banner", src: "Internal-data/ui-assets/banner-camp.webp", alt: "Reintroduction and conservation at Bouhedma", loading: "lazy", decoding: "async" }), ("WWF NA Bootcamp" === t.id || "Reintroduction and Conservation" === t.id) ? null : Jt(t, e)), n, o && O("aside", { class: "chapter-card__fact" }, O("p", {
+    }))), "Human-Wildlife-Coexistance" === t.id && O("img", { class: "chapter-card__coexistence-banner", src: "Internal-data/ui-assets/banner-coexistance-page.webp", alt: "Illustration of human-wildlife coexistence", loading: "lazy", decoding: "async" }), "WWF NA Bootcamp" === t.id && O("img", { class: "chapter-card__section-banner", src: "Internal-data/ui-assets/banner-camp.webp", alt: "Savanna camp landscape", loading: "lazy", decoding: "async" }), "Reintroduction and Conservation" === t.id && O("img", { class: "chapter-card__section-banner", src: "Internal-data/ui-assets/conserve.png", alt: "Reintroduction and conservation at Bouhedma", loading: "lazy", decoding: "async" }), ("WWF NA Bootcamp" === t.id || "Reintroduction and Conservation" === t.id) ? null : Jt(t, e)), n, o && O("aside", { class: "chapter-card__fact" }, O("p", {
         class: "chapter-card__fact-label", text: _("chapter.striking_fact")
     }), O("p", { text: o })), te(t), O("div", { class: "chapter-card__actions" }, ...t.buttons.map(e => function (t, e) {
         const n = b(t.label), o = `btn ${Gt[t.type] ?? "btn-secondary"}`;
@@ -1862,7 +1862,7 @@ function ja(t, e, n) {
     const { chapterId: a } = s();
     !function (t, e, n) {
         for (const a of e.chapters) {
-            const e = t.querySelector(`#${a.id}`), o = ee(a);
+            const e = document.getElementById(a.id), o = ee(a);
             o.classList.toggle("is-active", a.id === n), e.replaceChildren(o);
         }
         for (const a of t.querySelectorAll(".act-divider"))

@@ -2580,6 +2580,11 @@ html[data-theme=night] .chapter-card__day-chip {
   color: var(--color-night-amber);
 }
 
+html[data-theme=night] .chapter-card__title {
+  color: var(--color-night-amber);
+  text-shadow: 0 1px 6px rgba(13, 27, 42, .75);
+}
+
 html[data-theme=night] .nav-bar {
   background: color-mix(in srgb,var(--color-night-bg) 88%,transparent);
 }
@@ -2850,7 +2855,8 @@ html[dir=rtl] .audio-player__play:not([aria-pressed]) svg {
 html[data-theme=night] .protocol-modal .reveal h1,
 html[data-theme=night] .protocol-modal .reveal h2,
 html[data-theme=night] .protocol-modal .reveal h3 {
-  color: var(--color-night-text-primary);
+  color: var(--color-night-amber);
+  text-shadow: 0 1px 6px rgba(13, 27, 42, .75);
 }
 
 .protocol-modal .reveal h2 {
