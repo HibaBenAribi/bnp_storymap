@@ -9,6 +9,7 @@ const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = [
 ]))) => i.map(i => d[i]);
 import { m as t } from "./vendor-maplibre-DUgWaH7r.js";
 import { s as e } from "./vendor-scroll-CPqyXdOc.js";
+import { h as audio } from "./vendor-audio-Da_AWI87.js";
 !function () {
     const t = document.createElement("link").relList;
     if (!(t && t.supports && t.supports("modulepreload"))) {
@@ -179,24 +180,23 @@ function F(t) {
 }
 async function j(t) {
     const e = B(t);
-    return !!e && (M !== e && (await async function (t) {
-        const e = $.get(t);
-        if (!e)
+    if (!e)
+        return !1;
+    if (M !== e) {
+        const t = $.get(e);
+        if (!t)
             return !1;
-        const { Howl: n } = await A(async () => {
-            const { Howl: t } = await import("./vendor-audio-Da_AWI87.js").then(t => t.h);
-            return { Howl: t };
-        }, __vite__mapDeps([0, 1, 2]));
-        return L?.unload(), M = t, L = new n({
-            src: [e.audio], html5: !0, preload: !0, autoplay: !1, volume: .85, onend: () => l({ soundOn: !1 }), onloaderror: () => l({
-                soundOn: !1, soundError: t
+        L?.unload(), M = e, L = new audio.Howl({
+            src: [t.audio], html5: !0, preload: !0, autoplay: !1, volume: .85, onend: () => l({ soundOn: !1 }), onloaderror: () => l({
+                soundOn: !1, soundError: e
             }), onplayerror: () => l({
-                soundOn: !1, soundError: t
+                soundOn: !1, soundError: e
             })
-        }), !0;
-    }(e), l({
-        trackKey: e, soundError: null
-    })), L.playing() ? (L.pause(), l({ soundOn: !1 }), !1) : (L.play(), l({ soundOn: !0 }), !0));
+        }), l({
+            trackKey: e, soundError: null
+        });
+    }
+    return L.playing() ? (L.pause(), l({ soundOn: !1 }), !1) : (L.play(), l({ soundOn: !0 }), !0);
 }
 function N(t) {
     return s().soundOn && s().trackKey === t;
