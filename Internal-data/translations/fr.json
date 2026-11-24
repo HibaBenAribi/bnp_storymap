@@ -137,7 +137,7 @@
   "chapter.act_2_intro": "Six jours de terrain, dans l’ordre où chaque équipe a travaillé : les itinéraires, les plantes, puis les oiseaux à l’aube, les antilopes le matin et les pièges à rongeurs avant la nuit.",
   "chapter.act_3_intro": "Quand la lumière s’en va, un autre parc s’éveille : chauves-souris au-dessus de l’eau, insectes au piège lumineux, carnivores en mouvement, et une caméra qui ne dort jamais.",
   "chapter.act_4_intro": "Les personnes qui veillent sur le parc, et les données que nous laissons aux autres.",
-  "footer.media_credits": "Photos de terrain : WWF Afrique du Nord. Illustrations : Hiba Ben Aribi. Photos d’espèces : contributeurs d’iNaturalist et photographes nommés, crédités sur chaque photo avec sa licence. Enregistrements d’oiseaux : contributeurs de xeno-canto, crédités avec chaque extrait. Fond de carte : OpenFreeMap, © OpenMapTiles, © contributeurs OpenStreetMap. Imagerie satellite : Sentinel-2 cloudless par EOX IT Services GmbH (contient des données Copernicus Sentinel 2025 modifiées), CC BY-NC-SA 4.0. Relief : AWS Terrain Tiles.",
+  "footer.media_credits": "Photos de terrain : WWF Afrique du Nord. Photos d’espèces : contributeurs d’iNaturalist et photographes nommés, crédités sur chaque photo avec sa licence. Enregistrements d’oiseaux : WWF Afrique du Nord. Fond de carte : OpenFreeMap, © OpenMapTiles, © contributeurs OpenStreetMap. Imagerie satellite : Sentinel-2 cloudless par EOX IT Services GmbH (contient des données Copernicus Sentinel 2025 modifiées), CC BY-NC-SA 4.0. Relief : AWS Terrain Tiles.",
   "download.docs_title": "Métadonnées et documentation des attributs",
   "download.metadata": "Fiche de métadonnées",
   "download.attributes": "Tables des attributs",
